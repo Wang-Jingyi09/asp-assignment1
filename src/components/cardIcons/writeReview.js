@@ -7,9 +7,13 @@ const WriteReviewIcon = ({ movie }) => {
     <Link
       to={`/reviews/form`}
       state={{
-          movieId: movie.id,
+        movieId: movie.id,
       }}
+      className="write-review-icon"
+
     >
+      className="write-review-icon"
+
       <RateReviewIcon color="primary" fontSize="large" />
     </Link>
   );

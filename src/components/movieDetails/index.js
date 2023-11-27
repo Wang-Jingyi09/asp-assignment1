@@ -87,7 +87,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
           <Typography variant="h5" component="h2">
             Cast
           </Typography>
-          <ul>
+          <ul className="cast-list">
             {credits.cast.map(member => (
               <li key={member.cast_id}>
                 <a href={`https://www.themoviedb.org/person/${member.id}`} target="_blank" rel="noopener noreferrer">
@@ -96,14 +96,6 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
               </li>
             ))}
           </ul>
-          {/* <Typography variant="h5" component="h2">
-            Crew
-          </Typography>
-          <ul>
-            {credits.crew.map(member => (
-              <li key={member.credit_id}>{member.name} - {member.job}</li>
-            ))}
-          </ul> */}
         </>
       )}
 

@@ -25,7 +25,12 @@ To ensure that the movies that appear on the first page don't appear on the seco
     
 
 
-1. 
+1. actor navigation tests
+
+The test directly navigates to a movie detail page
+Remove the target attribute to ensure the link opens in the same tab. After clicking the link, the script checks if the current URL includes the path /person/2037-cillian-murphy, confirming that the navigation to the actor's TMDB page occurred as expected.
+
+A className '.cast-list' selector is added in components/movieDetails/index.js to assert the existence of the cast list.
 
 
 1. 

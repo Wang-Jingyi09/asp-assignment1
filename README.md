@@ -33,4 +33,3 @@ Remove the target attribute to ensure the link opens in the same tab. After clic
 A className '.cast-list' selector is added in components/movieDetails/index.js to assert the existence of the cast list.
 
 
-1. 

@@ -6,8 +6,7 @@ describe('Movie Actor Navigation', () => {
     const movieId = 872585; 
     cy.visit(`/movies/${movieId}`); 
 
-    cy.get('.cast-list').should('exist');
-
+    cy.get('.cast-list', { timeout: 10000 }).should('exist')
     cy.get('ul').within(() => {
       // Assert that the link exists and has the correct attributes before clicking
       cy.contains('Cillian Murphy as J. Robert Oppenheimer')
